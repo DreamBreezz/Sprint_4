@@ -9,7 +9,7 @@ import samokat.EnvConfig;
 
 import java.time.Duration;
 
-public class MainPage<orderButton> {
+public class MainPage {
     private final WebDriver driver;
 
     // кнопка принятия куки
@@ -69,31 +69,9 @@ public class MainPage<orderButton> {
     }
 
     // нажатие на кнопку "Заказать"
-    public MainPage clickOnOrderButton(By orderButtonVar) {
-        driver.findElement(orderButtonVar).click();
+    public MainPage clickOnOrderButton(By orderButton) {
+        driver.findElement(orderButton).click();
         return this;
     }
-
-//    public StatusPage clickOnGo() {
-//        driver.findElement(goButton).click();
-//
-//        return new StatusPage(driver);
-//    }
-//
-//    public MainPage enterOrderNumber(String orderNumber) {
-//        new WebDriverWait(driver, Duration.ofSeconds(SamokatConfig.DEFAULT_TIMEOUT))
-//                .until(ExpectedConditions.visibilityOfElementLocated(orderField));
-//
-//        driver.findElement(orderField).sendKeys(orderNumber);
-//
-//        return this;
-//    }
-//
-//    public MainPage clickOnOrderStatus() {
-//        driver.findElement(orderStatusField).click();
-//
-//        return this;
-//    }
-
 
 }

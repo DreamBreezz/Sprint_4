@@ -15,10 +15,10 @@ public class OrderScooterTests {
     private final String firstName;
     private final String lastName;
     private final String address;
-    private final By selectMetroStation;
+    private static By selectMetroStation;
     private final String phoneNumber;
     private final String date;
-    private final By orderPeriod;
+    private static By orderPeriod;
     private final String scooterColor;
     private final String commentForCourier;
 

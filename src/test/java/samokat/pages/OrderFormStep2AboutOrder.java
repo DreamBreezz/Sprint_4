@@ -25,10 +25,10 @@ public class OrderFormStep2AboutOrder {
     public static final By orderPeriodThreeDays = By.xpath(".//div[text()='трое суток']");
 
     // ввод комментария для курьера
-    private By inputCommentForCourier = By.xpath(".//input[@placeholder='Комментарий для курьера']");
+    private final By inputCommentForCourier = By.xpath(".//input[@placeholder='Комментарий для курьера']");
 
     // кнопка "Заказать"
-    private By orderButton = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
+    private final By orderButton = By.xpath(".//div[@class='Order_Buttons__1xGrp']/button[text()='Заказать']");
 
 
     public OrderFormStep2AboutOrder(WebDriver driver) {
