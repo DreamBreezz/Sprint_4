@@ -21,9 +21,6 @@ public class MainPage {
     public static final By orderButtonBottom = By.
             xpath(".//div[contains(@class,'FinishButton')]//button[text()='Заказать']");
 
-//    private final By goButton = By.cssSelector("[class*=Header_Button__]");
-//    private final By orderField = By.cssSelector(".Input_Input__1iN_Z");
-//    private final By orderStatusField = By.className("Header_Link__1TAG7");
 
     public MainPage(WebDriver driver) {
         this.driver = driver;
